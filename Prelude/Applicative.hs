@@ -13,7 +13,7 @@ instance Applicative ((->) e) where
   pure a _ = a
 
 instance (Applicative f, Applicative g) => Applicative (Compose f g) where
-    pure x = Compose (pure (pure x))
+  pure x = Compose (pure (pure x))
 
 instance Monoid a => Applicative ((,) a) where
-    pure x = (identity, x)
+  pure x = (identity, x)

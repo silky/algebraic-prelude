@@ -1,13 +1,16 @@
 module Main where
 
+import Prelude.Algebra
 import Prelude.Applicative
 import Prelude.Apply
+import Prelude.Bifunctor
 import Prelude.Bind
 import Prelude.Builtins
 import Prelude.Category
 import Prelude.Comonad
 import Prelude.Compose
 import Prelude.Const
+import Prelude.Contravariant
 import Prelude.Discrete
 import Prelude.Dual
 import Prelude.Extend
@@ -17,7 +20,11 @@ import Prelude.Id
 import Prelude.Isomorphism
 import Prelude.Monad
 import Prelude.Monoid
+import Prelude.Mu
+import Prelude.Natural
 import Prelude.Product
+import Prelude.Profunctor
+import Prelude.Semifunctor
 import Prelude.Semigroup
 import Prelude.Semigroupoid
 import Prelude.Tensor

@@ -4,8 +4,7 @@ module Prelude.Bind where
 
 import Prelude.Functor
 import Prelude.Apply
-
-import qualified Prelude.Builtins as Builtins
+import Prelude.Builtins (id, flip)
 
 infixr 1 =<<
 infixr 1 <=<, >=>
@@ -15,7 +14,7 @@ class Apply f => Bind f where
   join :: f (f a) -> f a
 
   (=<<) f x = join (fmap f x)
-  join m = Builtins.id =<< m
+  join m = id =<< m
 
 (>>=) :: Bind f => f a -> (a -> f b) -> f b
 (>>=) x f = f =<< x
@@ -24,7 +23,7 @@ class Apply f => Bind f where
 f >=> g = \x -> f x >>= g
 
 (<=<) :: Bind m => (b -> m c) -> (a -> m b) -> (a -> m c)
-(<=<) = Builtins.flip (>=>)
+(<=<) = flip (>=>)
 
 instance Bind ((->) e) where
   (=<<) f g x = f (g x) x
