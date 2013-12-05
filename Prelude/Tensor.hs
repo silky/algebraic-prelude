@@ -1,10 +1,11 @@
 {-# LANGUAGE NoImplicitPrelude #-}
-{-# LANGUAGE TypeFamilies #-}
 
 module Prelude.Tensor where
 
 import Prelude.Semigroupoid
 import Prelude.Product
+
+infixr 3 ***
 
 class Semigroupoid k => Tensor k where
   (***) :: k a b -> k c d -> k (Prod a c) (Prod b d)

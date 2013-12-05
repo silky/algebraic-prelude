@@ -14,6 +14,7 @@ import Prelude.Contravariant
 import Prelude.Discrete
 import Prelude.Dual
 import Prelude.Extend
+import Prelude.Foldable
 import Prelude.Functor
 import Prelude.Groupoid
 import Prelude.Id
@@ -28,3 +29,4 @@ import Prelude.Semifunctor
 import Prelude.Semigroup
 import Prelude.Semigroupoid
 import Prelude.Tensor
+import Prelude.Traversable
