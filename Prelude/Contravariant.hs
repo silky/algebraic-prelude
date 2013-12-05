@@ -1,3 +1,5 @@
+{-# LANGUAGE NoImplicitPrelude #-}
+
 module Prelude.Contravariant where
 
 class Contravariant f where

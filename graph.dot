@@ -1,0 +1,32 @@
+digraph Dependencies {
+  bgcolor="transparent"
+  Profunctor;
+  Bifunctor;
+  Contravariant;
+
+  Semigroupoid -> Semifunctor;
+  Semigroupoid -> Category;
+  Semigroupoid -> Groupoid;
+  Semigroupoid -> Tensor;
+
+  Semigroup -> Monoid;
+
+  Monoid -> Foldable;
+
+  Functor -> Foldable;
+
+  Functor -> Traversable;
+  Foldable -> Traversable;
+  Applicative -> Traversable;
+
+
+  Functor -> Apply;
+  Functor -> Extend;
+  Apply -> Bind;
+  Apply -> Applicative;
+
+  Extend -> Comonad;
+
+  Applicative -> Monad;
+  Bind -> Monad;
+}

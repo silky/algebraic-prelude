@@ -10,3 +10,11 @@ Uses only benign language extensions:
 * ``MultiParamTypeClasses``
 * ``FlexibleInstances``
 * ``FlexibleContexts``
+
+Graph
+-----
+
+<p align="center" style="padding: 20px">
+<img src="https://raw.github.com/sdiehl/algebraic-prelude/master/graph.png"/>
+</p>
+
