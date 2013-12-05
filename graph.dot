@@ -1,7 +1,6 @@
 digraph Dependencies {
   bgcolor="transparent"
   Profunctor;
-  Bifunctor;
   Contravariant;
 
   Semigroupoid -> Semifunctor;
@@ -19,6 +18,12 @@ digraph Dependencies {
   Foldable -> Traversable;
   Applicative -> Traversable;
 
+  Applicative -> Alternative;
+
+  Bifunctor -> Associative;
+  Functor -> Distributive;
+
+  Bifunctor -> Braided;
 
   Functor -> Apply;
   Functor -> Extend;
@@ -29,4 +34,6 @@ digraph Dependencies {
 
   Applicative -> Monad;
   Bind -> Monad;
+
+  Monad -> MonadTrans;
 }

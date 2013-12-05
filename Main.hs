@@ -1,10 +1,13 @@
 module Main where
 
 import Prelude.Algebra
+import Prelude.Alt
 import Prelude.Applicative
 import Prelude.Apply
+import Prelude.Associative
 import Prelude.Bifunctor
 import Prelude.Bind
+import Prelude.Braided
 import Prelude.Builtins
 import Prelude.Category
 import Prelude.Comonad
@@ -12,6 +15,7 @@ import Prelude.Compose
 import Prelude.Const
 import Prelude.Contravariant
 import Prelude.Discrete
+import Prelude.Distributive
 import Prelude.Dual
 import Prelude.Extend
 import Prelude.Foldable
@@ -20,6 +24,7 @@ import Prelude.Groupoid
 import Prelude.Id
 import Prelude.Isomorphism
 import Prelude.Monad
+import Prelude.MonadTrans
 import Prelude.Monoid
 import Prelude.Mu
 import Prelude.Natural
